@@ -2,11 +2,7 @@
   <Package xmlns="http://soap.sforce.com/2006/04/metadata">
       <types>
           <members>*</members>
-          <name>Queue</name>
-      </types>
-    <types>
-          <members>*</members>
-          <name>QueueRoutingConfig</name>
+          <name>Profile</name>
       </types>
       <version>63.0</version>
   </Package>
