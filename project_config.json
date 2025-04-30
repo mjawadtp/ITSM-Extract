@@ -1,6 +1,8 @@
 {
+    "metadata": [
+        "Layout"
+        ],
     "objectsList": {
-       
         "Incident": {
             "fields": [
                 {
