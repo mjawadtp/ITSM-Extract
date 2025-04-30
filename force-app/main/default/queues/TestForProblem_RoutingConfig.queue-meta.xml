@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>TestForProblem</name>
+    <queueMembers>
+        <users>
+            <user>agent1user17406331594023411911@salesforce.com</user>
+            <user>user17406341774453629791@salesforce.com</user>
+            <user>botuser.00dsg00000ma1hj@salesforce.com</user>
+            <user>stduser.00dsg00000ma1hj45afd34b92c4@salesforce.com</user>
+            <user>stduser.00dsg00000ma1hj583dcdbd9f6f@salesforce.com</user>
+            <user>stduser.00dsg00000ma1hj959bc7191d5d@salesforce.com</user>
+            <user>epic.0be4714ee52f@orgfarm.out</user>
+            <user>stduser.00dsg00000ma1hj563d1b779d51@salesforce.com</user>
+            <user>stduser.00dsg00000ma1hj0154c4612c31@salesforce.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>TestForProblem_RoutingConfig</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Problem</sobjectType>
+    </queueSobject>
+</Queue>

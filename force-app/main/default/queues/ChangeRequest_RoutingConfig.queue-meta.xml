@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>ChangeRequest</name>
+    <queueMembers>
+        <users>
+            <user>stduser.00dsg00000ma1hj959bc7191d5d@salesforce.com</user>
+            <user>epic.0be4714ee52f@orgfarm.out</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>ChangeRequest_RoutingConfig</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>ChangeRequest</sobjectType>
+    </queueSobject>
+</Queue>

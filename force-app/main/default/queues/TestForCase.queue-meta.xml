@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>TestForCase</name>
+    <queueMembers>
+        <users>
+            <user>agent1user17406331594023411911@salesforce.com</user>
+            <user>user17406341774453629791@salesforce.com</user>
+            <user>botuser.00dsg00000ma1hj@salesforce.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>TestForCase</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

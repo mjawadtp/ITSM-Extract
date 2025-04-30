@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>QAccessbiliti</name>
+    <queueMembers>
+        <users>
+            <user>agent1user17406331594023411911@salesforce.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>QAccessbiliti_RoutingConfig</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Incident</sobjectType>
+    </queueSobject>
+</Queue>
