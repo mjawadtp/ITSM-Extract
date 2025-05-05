@@ -1,0 +1,220 @@
+{
+    "metadata": [
+        "Layout"
+        ],
+    "objectsList": {
+        "User": {
+            "fields": [
+                {
+                    "name": "Id",
+                    "type": "id"
+                },
+                {
+                    "name": "Username",
+                    "type": "string"
+                },
+                {
+                    "name": "FirstName",
+                    "type": "string"
+                },
+                {
+                    "name": "LastName",
+                    "type": "string"
+                },
+                {
+                    "name": "Email",
+                    "type": "string"
+                },
+                {
+                    "name": "ProfileId",
+                    "type": "id"
+                },
+                {
+                    "name": "IsActive",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ChangeRequest": {
+            "fields": [
+                {
+                    "name": "Id",
+                    "type": "id"
+                },
+                {
+                    "name": "ChangeRequestNumber",
+                    "type": "string"
+                },
+                {
+                    "name": "Subject",
+                    "type": "string"
+                },
+                {
+                    "name": "Description",
+                    "type": "textarea"
+                },
+                {
+                    "name": "ChangeType",
+                    "type": "picklist",
+                    "unique": "false",
+                    "picklistValues": [
+                        {
+                            "label": "Standard",
+                            "value": "Standard"
+                        },
+                        {
+                            "label": "Normal",
+                            "value": "Normal"
+                        },
+                        {
+                            "label": "Major",
+                            "value": "Major"
+                        },
+                        {
+                            "label": "Emergency",
+                            "value": "Emergency"
+                        }
+                    ]
+                },
+                {
+                    "name": "Status",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        {
+                            "label": "New",
+                            "value": "New"
+                        },
+                        {
+                            "label": "Open",
+                            "value": "Open"
+                        },
+                        {
+                            "label": "Planning",
+                            "value": "Planning"
+                        },
+                        
+                        {
+                            "label": "Scheduled",
+                            "value": "Scheduled"
+                        },
+                        {
+                            "label": "Implementing",
+                            "value": "Implementing"
+                        },
+                        {
+                            "label": "Reviewed",
+                            "value": "Reviewed"
+                        },
+                        {
+                            "label": "Approved",
+                            "value": "Approved"
+                        },
+                        {
+                            "label": "Closed",
+                            "value": "Closed"
+                        },
+                        {
+                            "label": "Canceled",
+                            "value": "Canceled"
+                        },
+                        {
+                            "label": "Rejected",
+                            "value": "Rejected"
+                        }
+                    ]
+                },
+                {
+                    "name": "Category",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        
+                    ]
+                },
+                {
+                    "name": "Priority",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        {
+                            "label": "Critical",
+                            "value": "Critical"
+                        },
+                        {
+                            "label": "High",
+                            "value": "High"
+                        },
+                        {
+                            "label": "Moderate",
+                            "value": "Moderate"
+                        },
+                        {
+                            "label": "Low",
+                            "value": "Low"
+                        }
+                    ]
+                },
+                {
+                    "name": "OwnerId",
+                    "type": "id"
+                },
+                {
+                    "name": "Impact",
+                    "type": "picklist",
+                    "unique": "false",
+                    "picklistValues": [
+                        {
+                            "label": "High",
+                            "value": "High"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "Medium"
+                        },
+                        {
+                            "label": "Low",
+                            "value": "Low"
+                        }
+                    ]
+                },
+                {
+                    "name": "Urgency",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        {
+                            "label": "High",
+                            "value": "High"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "Medium"
+                        },
+                        {
+                            "label": "Low",
+                            "value": "Low"
+                        }
+                    ]
+                },
+                {
+                    "name": "EstimatedStartTime",
+                    "type": "datetime"
+                },
+                {
+                    "name": "EstimatedEndTime",
+                    "type": "datetime"
+                }
+            ],
+            "relatedObjects": [
+                {
+                    "name": "User",
+                    "referenceField": "OwnerId"
+                }
+            ]
+        }
+        
+
+       
+    }
+}
