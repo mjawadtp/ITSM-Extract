@@ -3,6 +3,38 @@
         "Layout"
         ],
     "objectsList": {
+        "User": {
+            "fields": [
+                {
+                    "name": "Id",
+                    "type": "id"
+                },
+                {
+                    "name": "Username",
+                    "type": "string"
+                },
+                {
+                    "name": "FirstName",
+                    "type": "string"
+                },
+                {
+                    "name": "LastName",
+                    "type": "string"
+                },
+                {
+                    "name": "Email",
+                    "type": "string"
+                },
+                {
+                    "name": "ProfileId",
+                    "type": "id"
+                },
+                {
+                    "name": "IsActive",
+                    "type": "boolean"
+                }
+            ]
+        },
         "ChangeRequest": {
             "fields": [
                 {
@@ -124,6 +156,10 @@
                     ]
                 },
                 {
+                    "name": "OwnerId",
+                    "type": "id"
+                },
+                {
                     "name": "Impact",
                     "type": "picklist",
                     "unique": "false",
@@ -170,7 +206,12 @@
                     "type": "datetime"
                 }
             ],
-            "relatedObjects": []
+            "relatedObjects": [
+                {
+                    "name": "User",
+                    "referenceField": "OwnerId"
+                }
+            ]
         }
         
 
