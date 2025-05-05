@@ -3,63 +3,125 @@
         "Layout"
         ],
     "objectsList": {
-       
-        "Problem": {
+        "ChangeRequest": {
             "fields": [
                 {
                     "name": "Id",
                     "type": "id"
                 },
                 {
-                    "name": "Category",
-                    "type": "picklist",
-                    "unique": "false",
-                    "picklistValues": [
-                        {
-                            "label": "Database",
-                            "value": "Database"
-                        },
-                        {
-                            "label": "Hardware",
-                            "value": "Hardware"
-                        },
-                        {
-                            "label": "Inquiry / Help",
-                            "value": "Inquiry / Help"
-                        },
-                        {
-                            "label": "Network",
-                            "value": "Network"
-                        },
-                        {
-                            "label": "Software",
-                            "value": "Software"
-                        },
-                        {
-                            "label": "Security",
-                            "value": "Security"
-                        },
-                        {
-                            "label": "Telephony",
-                            "value": "Telephony"
-                        },
-                        {
-                            "label": "Storage",
-                            "value": "Storage"
-                        },
-                        {
-                            "label": "Email",
-                            "value": "Email"
-                        },
-                        {
-                            "label": "Access Management",
-                            "value": "Access Management"
-                        }
-                    ]
+                    "name": "ChangeRequestNumber",
+                    "type": "string"
+                },
+                {
+                    "name": "Subject",
+                    "type": "string"
                 },
                 {
                     "name": "Description",
                     "type": "textarea"
+                },
+                {
+                    "name": "ChangeType",
+                    "type": "picklist",
+                    "unique": "false",
+                    "picklistValues": [
+                        {
+                            "label": "Standard",
+                            "value": "Standard"
+                        },
+                        {
+                            "label": "Normal",
+                            "value": "Normal"
+                        },
+                        {
+                            "label": "Major",
+                            "value": "Major"
+                        },
+                        {
+                            "label": "Emergency",
+                            "value": "Emergency"
+                        }
+                    ]
+                },
+                {
+                    "name": "Status",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        {
+                            "label": "New",
+                            "value": "New"
+                        },
+                        {
+                            "label": "Open",
+                            "value": "Open"
+                        },
+                        {
+                            "label": "Planning",
+                            "value": "Planning"
+                        },
+                        
+                        {
+                            "label": "Scheduled",
+                            "value": "Scheduled"
+                        },
+                        {
+                            "label": "Implementing",
+                            "value": "Implementing"
+                        },
+                        {
+                            "label": "Reviewed",
+                            "value": "Reviewed"
+                        },
+                        {
+                            "label": "Approved",
+                            "value": "Approved"
+                        },
+                        {
+                            "label": "Closed",
+                            "value": "Closed"
+                        },
+                        {
+                            "label": "Canceled",
+                            "value": "Canceled"
+                        },
+                        {
+                            "label": "Rejected",
+                            "value": "Rejected"
+                        }
+                    ]
+                },
+                {
+                    "name": "Category",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        
+                    ]
+                },
+                {
+                    "name": "Priority",
+                    "type": "picklist",
+                    "unique": false,
+                    "picklistValues": [
+                        {
+                            "label": "Critical",
+                            "value": "Critical"
+                        },
+                        {
+                            "label": "High",
+                            "value": "High"
+                        },
+                        {
+                            "label": "Moderate",
+                            "value": "Moderate"
+                        },
+                        {
+                            "label": "Low",
+                            "value": "Low"
+                        }
+                    ]
                 },
                 {
                     "name": "Impact",
@@ -81,96 +143,6 @@
                     ]
                 },
                 {
-                    "name": "PermanentSolution",
-                    "type": "textarea"
-                },
-                {
-                    "name": "Priority",
-                    "type": "picklist",
-                    "unique": "false",
-                    "picklistValues": [
-                        {
-                            "label": "Critical",
-                            "value": "Critical"
-                        },
-                        {
-                            "label": "High",
-                            "value": "High"
-                        },
-                        {
-                            "label": "Moderate",
-                            "value": "Moderate"
-                        },
-                        {
-                            "label": "Low",
-                            "value": "Low"
-                        }
-                    ]
-                },
-                {
-                    "name": "PriorityOverrideReason",
-                    "type": "string"
-                },
-                {
-                    "name": "ResolutionDateTime",
-                    "type": "datetime"
-                },
-                {
-                    "name": "ResolutionSummary",
-                    "type": "textarea"
-                },
-                {
-                    "name": "RootCauseSummary",
-                    "type": "textarea"
-                },
-                {
-                    "name": "Status",
-                    "type": "picklist",
-                    "unique": false,
-                    "picklistValues": [
-                        {
-                            "label": "New",
-                            "value": "New"
-                        },
-                        {
-                            "label": "Open",
-                            "value": "Open"
-                        },
-                        {
-                            "label": "Root Case Analysis",
-                            "value": "Root Case Analysis"
-                        },
-                        {
-                            "label": "Fix In Progress",
-                            "value": "Fix In Progress"
-                        },
-                        {
-                            "label": "Resolved",
-                            "value": "Resolved"
-                        },
-                        {
-                            "label": "Closed",
-                            "value": "Closed"
-                        },
-                        {
-                            "label": "Pending Change",
-                            "value": "Pending Change"
-                        },
-                        {
-                            "label": "Known Error",
-                            "value": "Known Error"
-                        },
-                        {
-                            "label": "Work In Progress",
-                            "value": "Work In Progress"
-                        }
-                    ]
-                },
-                {
-                    "name": "Subject",
-                    "type": "string"
-                },
-                {
                     "name": "Urgency",
                     "type": "picklist",
                     "unique": false,
@@ -188,14 +160,17 @@
                             "value": "Low"
                         }
                     ]
+                },
+                {
+                    "name": "EstimatedStartTime",
+                    "type": "datetime"
+                },
+                {
+                    "name": "EstimatedEndTime",
+                    "type": "datetime"
                 }
             ],
-            "relatedObjects": [],
-            "duplicateCheck": [],
-            "recordIds": [],
-            "formats": [],
-            "filters": [],
-            "numRecords": 20
+            "relatedObjects": []
         }
         
 
