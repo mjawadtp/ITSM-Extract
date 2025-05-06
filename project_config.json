@@ -3,218 +3,43 @@
         "Layout"
         ],
     "objectsList": {
-        "User": {
+        "Knowledge__kav": {
             "fields": [
                 {
                     "name": "Id",
                     "type": "id"
                 },
                 {
-                    "name": "Username",
+                    "name": "Title",
                     "type": "string"
                 },
                 {
-                    "name": "FirstName",
+                    "name": "UrlName",
                     "type": "string"
                 },
                 {
-                    "name": "LastName",
-                    "type": "string"
-                },
-                {
-                    "name": "Email",
-                    "type": "string"
-                },
-                {
-                    "name": "ProfileId",
-                    "type": "id"
-                },
-                {
-                    "name": "IsActive",
-                    "type": "boolean"
-                }
-            ]
-        },
-        "ChangeRequest": {
-            "fields": [
-                {
-                    "name": "Id",
-                    "type": "id"
-                },
-                {
-                    "name": "ChangeRequestNumber",
-                    "type": "string"
-                },
-                {
-                    "name": "Subject",
-                    "type": "string"
-                },
-                {
-                    "name": "Description",
+                    "name": "Summary",
                     "type": "textarea"
                 },
                 {
-                    "name": "ChangeType",
-                    "type": "picklist",
-                    "unique": "false",
-                    "picklistValues": [
-                        {
-                            "label": "Standard",
-                            "value": "Standard"
-                        },
-                        {
-                            "label": "Normal",
-                            "value": "Normal"
-                        },
-                        {
-                            "label": "Major",
-                            "value": "Major"
-                        },
-                        {
-                            "label": "Emergency",
-                            "value": "Emergency"
-                        }
-                    ]
+                    "name": "Issue__c",
+                    "type": "textarea"
                 },
                 {
-                    "name": "Status",
-                    "type": "picklist",
-                    "unique": false,
-                    "picklistValues": [
-                        {
-                            "label": "New",
-                            "value": "New"
-                        },
-                        {
-                            "label": "Open",
-                            "value": "Open"
-                        },
-                        {
-                            "label": "Planning",
-                            "value": "Planning"
-                        },
-                        
-                        {
-                            "label": "Scheduled",
-                            "value": "Scheduled"
-                        },
-                        {
-                            "label": "Implementing",
-                            "value": "Implementing"
-                        },
-                        {
-                            "label": "Reviewed",
-                            "value": "Reviewed"
-                        },
-                        {
-                            "label": "Approved",
-                            "value": "Approved"
-                        },
-                        {
-                            "label": "Closed",
-                            "value": "Closed"
-                        },
-                        {
-                            "label": "Canceled",
-                            "value": "Canceled"
-                        },
-                        {
-                            "label": "Rejected",
-                            "value": "Rejected"
-                        }
-                    ]
+                    "name": "Workaround__c",
+                    "type": "textarea"
                 },
                 {
-                    "name": "Category",
-                    "type": "picklist",
-                    "unique": false,
-                    "picklistValues": [
-                        
-                    ]
+                    "name": "Root_Cause__c",
+                    "type": "textarea"
                 },
                 {
-                    "name": "Priority",
-                    "type": "picklist",
-                    "unique": false,
-                    "picklistValues": [
-                        {
-                            "label": "Critical",
-                            "value": "Critical"
-                        },
-                        {
-                            "label": "High",
-                            "value": "High"
-                        },
-                        {
-                            "label": "Moderate",
-                            "value": "Moderate"
-                        },
-                        {
-                            "label": "Low",
-                            "value": "Low"
-                        }
-                    ]
-                },
-                {
-                    "name": "OwnerId",
-                    "type": "id"
-                },
-                {
-                    "name": "Impact",
-                    "type": "picklist",
-                    "unique": "false",
-                    "picklistValues": [
-                        {
-                            "label": "High",
-                            "value": "High"
-                        },
-                        {
-                            "label": "Medium",
-                            "value": "Medium"
-                        },
-                        {
-                            "label": "Low",
-                            "value": "Low"
-                        }
-                    ]
-                },
-                {
-                    "name": "Urgency",
-                    "type": "picklist",
-                    "unique": false,
-                    "picklistValues": [
-                        {
-                            "label": "High",
-                            "value": "High"
-                        },
-                        {
-                            "label": "Medium",
-                            "value": "Medium"
-                        },
-                        {
-                            "label": "Low",
-                            "value": "Low"
-                        }
-                    ]
-                },
-                {
-                    "name": "EstimatedStartTime",
-                    "type": "datetime"
-                },
-                {
-                    "name": "EstimatedEndTime",
-                    "type": "datetime"
+                    "name": "Resolution__c",
+                    "type": "textarea"
                 }
-            ],
-            "relatedObjects": [
-                {
-                    "name": "User",
-                    "referenceField": "OwnerId"
-                }
+               
             ]
         }
-        
-
        
     }
 }
